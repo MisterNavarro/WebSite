@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Head has a content that adjusts the width of the viewport when shrunk, a title, and a css link-->
+<head>
+ <!--[if IE]>
+ <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+ <![endif]-->
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="css/cakes.css">
+ <link rel="shortcut icon" href="CakePortfolio/favIcon.jpg">
+ <title>Cakes by Emilee</title>
+</head>
+<!--The body has a butterfly background image in the css -->    
+<body>
+ <header>
+  <h1>Cakes by Emilee</h1>
+   <nav>
+    <ul>
+     <li><a href="index.html">Home</a></li>
+     <li><a href="gallery.html">Gallery</a>
+      <ul>
+       <li><a href="birthdaycakes.html">Birthday Cakes</a></li>
+       <li><a href="babyweddings.html">Wedding/Baby Shower cakes</a></li>
+       <li><a href="cupcakes.html">Cupcakes</a></li>
+      </ul>
+     </li>
+     <li><a href="flavors.html">Flavors</a></li>
+     <li><a href="price.html">Prices</a></li>
+     <li><a href="order.html">Order</a></li>
+    </ul>   
+   </nav>
+ </header>
+ <div id="wrapper">
+<!--My main contains 4 sections-->
+  <article class="fixarticle">
+  <!--This section holds an img, h2, and an unorder list for the description-->
+   <section class="topsection">
+    <h2>Welcome to Emilee Marron Navarro's Portfolio</h2>
+    <ul>
+        <a href="portfolio.html"></a><img class="profile" src="CakePortfolio/GraduationPic2.jpg" alt="Emilee holding a day of the dead themed cake.">
+            <li>Born in 91'</li>
+            <li>U of A wildcat for life</li>
+            <li>8 years of baking experience</li>
+    </ul>
+   </section>
+    <!--This section contains an picturemap with a kind of sprites made picture. Oh the joys on creating that picturemap...-->
+   <section class="middlesection">
+    <h2>Pictures?</h2>    
+            <p  class="centerfix">Everyone loves pictures, it helps with the decision making.
+Choose the type of cakes you want to see...</p>
+        <img class="mappicture" src="CakePortfolio/picturecakes.jpg" alt="a pink & white babyshower cake, a hellokitty cake, and a spanish written pink and white flowers cake." usemap="#picturemap">
+            <map name="picturemap">
+                <area shape="rect" coords="0, 0, 250, 298" href="babyweddings.html" alt="pink babyshower cake.">
+                <area shape ="rect" coords="250, 0, 657, 298" href="babyweddings.html" alt="Hello kitty cake">
+                <area shape="rect" coords="657, 0, 877, 298" href="gallery.html" alt="birthday cake.">
+            </map>
+   </section>
+    <!--A hyperlink image, h2, p, and ul. ul has the flavors-->
+   <section class="bottomsection">
+    <h2>Having a certain craving?</h2>
+    <a href="flavors.html"><img class="flavors" src="CakePortfolio/flavors.jpg" alt="a cake with buttercream covered on top"></a>
+    <p class="centerfix">We offer a wide variety of flavors for you to choose from.</p><br>
+    <ul>
+            <li>Vanilla</li>
+            <li>Chocolate</li>
+            <li>Red Velvet</li>
+            <li>Gluten Free</li>
+    </ul>
+   </section>
+    <!--This section contains contact information and hyperlinks to some of the items.-->
+   <section class="lastsection">  
+    <h2>Questions?</h2>  
+    <img class="phoneimg" src="CakePortfolio/contact.jpg" alt="5 guys holding their phone out at each's phone">    
+    <p>Please feel free to contact me through the <a href="order.html">Request form</a>, <a href="mailto:dontmessage@gmail.com">E-Mail</a>, or by <a href="tel:123456789">call</a>/<a href="sms:123456789">text</a> phone.</p>
+    <br><br><br><br>    
+   </section>
+  </article>
+<!--footer nothing crazy just basic-->
+  <footer>
+   Copyright &copy; 2016 Cakes by Emilee<br>
+   E-mail: <a href="mailto:em22240@gmail.com">em22240@gmail.com</a>
+  </footer>
+ </div>
+</body>
+</html>

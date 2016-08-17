@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Head has a content that adjusts the width of the viewport when shrunk, a title, and a css link-->
+<head>
+ <!--[if IE]>
+ <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+ <![endif]-->
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="css/cakes.css">
+ <link rel="shortcut icon" href="CakePortfolio/favIcon.jpg">
+ <title>Cakes by Emilee</title>
+</head> 
+<body>
+ <header><!--Header with a title & a navigation in it containing the tabs hyperlinks-->
+  <h1>Cakes by Emilee</h1>
+   <nav>
+    <ul>
+     <li><a href="index.html">Home</a></li>
+     <li><a href="gallery.html">Gallery</a>
+      <ul>
+       <li><a href="birthdaycakes.html">Birthday Cakes</a></li>
+       <li><a href="babyweddings.html">Wedding/Baby Shower cakes</a></li>
+       <li><a href="cupcakes.html">Cupcakes</a></li>
+      </ul>
+     </li>
+     <li><a href="flavors.html">Flavors</a></li>
+     <li><a href="price.html">Prices</a></li>
+     <li><a href="order.html">Order</a></li>
+    </ul>   
+   </nav>
+ </header>
+ <!--The wrapper contains all my content in the middle with a border-->
+ <div id="wrapper">
+  <article id="requestarticle">
+   <!--H2 HEADER-->
+   <h2>Welcome to the request form.</h2>
+    <!--FORM-->
+    <form id="formenting" method="post" action="#">
+     <!--div container to hold the leftside of the form-->
+     <div id="formsleft">
+        <!--FULL NAME INPUT & LABEL-->
+        <label for="fullName">Full Name:</label>
+       <input type="text" id="fullName" class="fixInput" required="required" autocomplete="on" tabindex="0">
+        <!--DATE INPUT & LABEL-->
+        <label for="request">Requested Date:</label>
+        <input type="date" id="request" class="fixInput" required="required" tabindex="1">
+        <!--FIELDSET TO FIND THE BEST CONTACT METHOD -->
+       <fieldset> 
+        <legend>
+         <span>Please select one for Primary Contact Method</span> 
+        </legend>
+         <!--RADIO BUTTON, PHONE NUMBER INPUT, & LABEL -->
+         <input type="radio" name="callmethod" id="phonemethod" tabindex="2" required="required">
+         <label for="phone">Phone Number:</label>
+        <input type="number" id="phone" maxLength="10" tabindex="3" required="required"><br>
+         <!--RADIO BUTTON, EMAIL INPUT, & LABEL-->
+         <input type="radio" name="callmethod" id="emailmethod" tabindex="4">
+         <label for="email">E-mail:</label>
+        <input type="email" id="email" tabindex="5">
+       </fieldset>
+        <!--ADDITIONAL DETAILS LABEL & INPUT-->
+        <label for="details">To make this a faster process.<br> Please provide a brief description of the cake:</label>    
+        <textarea id="details" required="required" tabindex="5" placeholder="Ex:cake size, type, color. Or just wanted to ask about for certain add ons we did not listed, EX: thres leches cakes, different flavor fillings, or designs. Etc...">
+        </textarea>
+     </div>
+     <!--THE FIELDSET THAT HANGS ON THE RIGHT SIDE-->
+     <div id="formsright">
+      <!--HAS THE REASON AND ONE ON TOP OF EACH OTHER-->
+      <h3>Reason</h3>
+      <!--CHECKBOX & LABEL FOR TASTE TESTING APPOINTMENTS-->
+      <fieldset>
+      <input type="radio" name="reasons" id="taste">
+       <label for="taste">Wedding Taste testing appointment</label><br>    
+      <!--CHECKBOX & LABEL FOR CAKE DESIGN APPOINTMENTS-->
+      <input type="radio" name="reasons" id="design">
+       <label for="design">Cake desing appointment</label><br>      
+      <!--CHECKBOX & LABEL FOR OTHER REASONS-->
+      <input type="radio" name="reasons" id="other">
+       <label for="other">Other Reason</label><br>
+      </fieldset>
+      <!--SUBMIT BUTTON TO SEND ALL INFORMATION-->
+      <input type="submit" id="turnIn" value="Send Request">
+     </div>
+    </form>
+    <img class="emilee" src="CakePortfolio/emilee1.jpg" alt="Emilee giving a thumbs up next to a weddint cake">
+    </article>
+  <footer>
+  Copyright &copy; 2016 Cakes by Emilee<br>
+  E-mail to : <a href="mailto:em22240@gmail.com">em22240@gmail.com</a>
+  </footer>
+ </div>
+</body>
+</html>

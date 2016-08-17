@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <!--[if IE]>
+ <script src="http://html5shim.googlecode.com/svn/trunk/html5.js">  </script>
+ <![endif]-->
+ <meta charset="utf-8"/>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+ <link rel="stylesheet" href="css/cakes.css">
+ <link rel="shortcut icon" href="CakePortfolio/favIcon.jpg">
+ <title>Cakes by Emilee</title>
+</head>
+<body>
+ <header>
+  <h1>Cake Prices</h1>
+   <nav>
+    <ul>
+     <li><a href="index.html">Home</a></li>
+     <li><a href="gallery.html">Gallery</a>
+      <ul>
+      <li><a href="birthdaycakes.html">Birthday Cakes</a></li>
+      <li><a href="babyweddings.html">Wedding/Baby Shower cakes</a></li>
+      <li><a href="cupcakes.html">Cupcakes</a></li>
+      </ul>
+     </li>
+     <li><a href="flavors.html">Flavors</a></li>
+     <li><a href="price.html">Prices</a></li>
+     <li><a href="order.html">Order</a></li>
+    </ul>   
+   </nav>
+ </header>
+ <div id="wrapper">
+  <article class="fixarticle">
+   <table>
+   <!--Contains the prices for the cakes, class = coral/whitefix adds a border of white or coral to the right side of it. This table has 8 table rows with 6 columns-->
+    <caption>Cake Prices</caption>
+     <tr>
+      <th colspan="2" class="whitefix">Cakes</th>
+      <th colspan="2" class="whitefix">Buttercream</th>
+      <th colspan="2">Fondant</th>
+     </tr>
+     <tr>
+      <th class="whitefix">Round</th>
+      <th class="whitefix">Square</th>
+      <th class="whitefix">Round</th>
+      <th class="whitefix">Square</th>
+      <th class="whitefix">Round</th>
+      <th >Square</th>
+     </tr>
+     <tr>
+      <td class="coralfix">5"</td>
+      <td class="coralfix">4x6</td>
+      <td class="coralfix">$25.00</td>
+      <td class="coralfix">$30.00</td>
+      <td class="coralfix">$35.00</td>
+      <td>$40.00</td>
+     </tr>
+     <tr>
+      <td class="whitefix">8"</td>
+      <td class="whitefix">8x8</td>
+      <td class="whitefix">$35.00</td>
+      <td class="whitefix">$40.00</td> <td class="whitefix">$45.00</td>
+      <td>$50.00</td>
+     </tr>
+     <tr>
+      <td class="coralfix">10"</td>
+      <td class="coralfix">10x14</td>
+      <td class="coralfix">$45.00</td>
+      <td class="coralfix">$60.00</td>
+      <td class="coralfix">$55.00</td>
+      <td>$70.00</td>
+     </tr>
+     <tr>
+      <td class="whitefix">12"</td>
+      <td class="whitefix">10x18</td>
+      <td class="whitefix">$60.00</td>
+      <td class="whitefix">$70.00</td>
+      <td class="whitefix">$75.00</td>
+      <td>$90.00</td>
+     </tr>
+     <tr>
+      <td class="coralfix">14"</td>
+      <td class="coralfix">N/A</td>
+      <td class="coralfix">$70.00</td>
+      <td class="coralfix">N/A</td>
+      <td class="coralfix">$95.00</td>
+      <td>N/A</td>
+     </tr>
+     <tr>
+      <td class="whitefix">20"</td>
+      <td class="whitefix">N/A</td>
+      <td class="whitefix">$90.00</td>
+      <td class="whitefix">N/A</td>
+      <td class="whitefix">$115.00</td>
+      <td>N/A</td>
+     </tr>
+   </table>
+   <table>
+   <!--table for cupcakes, just has the price for 1 or 2 dozen-->
+    <caption>Cupcakes</caption>
+     <tr>
+      <td class="coralfix">1 Dozen</td>
+      <td>$20.00</td>
+     </tr>
+     <tr>
+      <td class="whitefix">2 Dozen</td>
+      <td>$40.00</td>
+     </tr>
+   </table>
+   <table>
+<!--Fondant cut out prices-->
+    <caption>Fondant Cut-Outs</caption>
+     <tr>
+      <td class="coralfix">6 Cut-Outs</td>
+      <td>$5.00</td>
+     </tr>
+     <tr>
+      <td class="whitefix">12 Cut-Outs</td>
+      <td>$10.00</td>
+     </tr>
+     <tr>
+      <td class="coralfix">18 Cut-Outs</td>
+      <td>$15.00</td>
+     </tr>
+   </table>
+   <table>
+    <!--Fruit filling prices. Has two headers with filling layers, and price.-->
+    <caption>Fruit Fillings</caption>
+     <tr>
+      <th class="whitefix">Filling Layers</th>
+      <th>Price</th>
+     </tr>
+     <tr>
+      <td class="whitefix">1</td>
+      <td>$5.00</td>
+     </tr>
+     <tr>
+      <td class="coralfix">2</td>
+      <td>$10.00</td>
+     </tr>
+     <tr>
+      <td class="whitefix">3</td>
+      <td>$15.00</td>    
+     </tr>    
+   </table><br>
+   <!--BEGINNING OF FORM-->
+  <form id="cakeform" action="" method="post" onload="formreset()">
+   <h2>Cake-Culator</h2>
+   <!--FIRST FIELDSET-->
+   <fieldset>
+    <legend><span>Cakes</span></legend>
+    <!--BUTTERCREAM RADIO BUTTON-->
+     <input type="checkbox" name="caketype" id="Buttercream" onclick="showRS()">
+     <label for="Buttercream">Buttercream</label>
+     <!--FONDANT RADIO BUTTON-->
+     <input type="checkbox" name="caketype" id="Fondant" onclick="showRS()">
+     <label for="Fondant">Fondant</label><br>
+     <!--ROUND SELECT-->
+     <select id="selectRound">
+      <option value="25">5"</option>
+      <option value="35">8"</option>
+      <option value="45">10"</option>
+      <option value="60">12"</option>
+      <option value="70">14"</option>
+      <option value="90">20"</option>
+     </select>
+     <!--ROUND RADIO BUTTON-->
+     <input type="radio" name="cakes" id="Round" onclick="showRound()">
+     <label for="Round" id="labelR">Round</label>
+     <!--SQUARE RADIO BUTTON-->
+     <input type="radio" name="cakes" id="Square" onclick="showSquare()">
+     <label for="Square" id="labelS">Square </label>
+     <!--SQUARE SELECT-->
+     <select id="selectSquare">
+      <option value="30">4x6</option>
+      <option value="40">8x8</option>
+      <option value="60">10x14</option>
+      <option value="70">10x18</option>
+     </select><br>
+     <!--FRUIT FILLING INPUT-->
+     <label for="FruitFilling">Fruit-Filling:</label>
+     <input type="number" value="0" id="FruitFilling">
+     <!--FONDANT CUT-OUTS INPUT-->
+     <label for="CutOuts">Fondant Cut-Outs:</label>
+     <input type="number" value="0" id="CutOuts"><br>(6 per order)
+     </fieldset>
+     <!--SECOND FIELDSET-->
+     <fieldset >
+      <legend><span>Cupcakes</span></legend>
+      <!--CUPCAKES INPUT-->
+      <label for="Cupcakes">By the Dozen:</label>
+      <input type="number" value="0" id="Cupcakes">
+     </fieldset>
+     <!--THIRD FIELDSET-->
+     <fieldset>
+      <legend><span>Total</span></legend>
+      <!--CALCULATE BUTTON-->
+      <input type="button" value="Calculate" id="btntotal" onclick="showtotal()">
+      <!--TOTAL INPUT-->
+      <input type="text" id="thetotal" placeholder="$0.00" disabled>
+      <!--RESET BUTTON-->
+      <input type="button" value="Reset" id="btnreset" onclick="formreset()">
+     </fieldset>
+  </form>
+   <!--A figure holding a pic and figcaption. & aligns the chart image to the center with bold font -->
+  <figure>
+   <img src="CakePortfolio/cakechart.jpg" alt="a chart showing a helpful cake chart">
+  </figure>
+  </article>
+<!--footer is the same as all others copyright with email hyperlink at the bottom.-->
+<footer>
+Copyright &copy; 2016 Cakes by Emilee<br>
+E-mail to : <a href="mailto:em22240@gmail.com">em22240@gmail.com</a>
+</footer>
+</div>
+<script src="JavaScript/javScript.js">   
+</script>
+</body>
+</html>

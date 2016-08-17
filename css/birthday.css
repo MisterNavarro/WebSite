@@ -1,0 +1,22 @@
+#wrapper {
+	width:80%;
+	margin: 0 auto;
+    border: 4px solid coral;
+}
+main {
+	font-family: courier new;
+	background-color: white;
+	color: coral;
+	padding: 20px;
+	font-size: 160%;
+}
+#birthdayGallery h2{
+ text-align: center;
+}
+#birthdayGallery {
+ text-align: center;
+}
+#birthdayGallery img {
+ padding: 0px;
+ border: 0px;
+}

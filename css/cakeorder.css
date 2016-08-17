@@ -1,0 +1,114 @@
+body {
+	background-image:url(../folderofdooom/butterfly.jpg);
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+header {
+	font-size: 200%;
+	width: 100%;
+	text-align: center;	
+	font-family:Comic Sans MS;
+}
+nav a{
+    background-color: coral;
+}
+nav ul {
+    padding: 0px 10px;
+    list-style-type: none;
+    position: relative;
+    display: inline-table;
+}
+nav ul li {
+/*    background-color: coral;
+    text-align: left;*/
+    float: left;
+    border-top: 2px solid white;
+}
+nav ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+nav ul li:hover a{
+    background-color: white;
+    color: coral;
+}
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+nav ul ul li:hover a{
+    background-color: coral;
+    color:white;
+}
+nav ul ul li {
+    width: 72%;
+    float:none;
+    border-top: 3px solid coral;
+    position: relative;
+}
+nav ul li:hover a{
+    background-color: white;
+    color:coral;
+}
+nav ul li:hover > ul {
+    display: block;
+}
+#wrapper {
+	width:80%;
+	margin: 0 auto;
+	padding: 0px;
+    border: 4px solid coral;
+}
+#formenting {
+  padding:2%;
+    width: 60%;
+    background-color: coral;
+    color: white;
+ float: left;
+}
+#formenting label {
+font-size: 90%;
+padding: 1.1%;
+}
+#formenting input{
+ width:20%;
+}
+.emilee {
+width: 30%;
+float:right;
+}
+#mainform  p{
+ width:64%;
+ padding-bottom:1%;
+}
+h1 { 
+	color: coral;
+	font-weight: bold;
+	font-style: italic;
+	font-family:Comic Sans MS;
+}
+h2 {
+	font-family:Comic Sans MS;
+	background-color: coral;
+	color: white;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 170%;
+    margin-bottom: 1%;
+}
+footer {
+	background-color: coral;
+	color: white;
+	text-align: center;
+ clear: both;
+}
+main {
+	font-family: courier new;
+	background-color: white;
+	color: coral;
+	padding: 30px;
+	font-size: 160%;
+}

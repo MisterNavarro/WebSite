@@ -1,0 +1,441 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+html { overflow-y: scroll; }
+header, footer, article, section, main {
+display: block;
+}
+body {
+	width: 100%;
+    height: 100%;
+	background-image:url(../CakePortfolio/butterfly.jpg);
+}
+header {
+	font-size: 200%;
+	width: 100%;
+	text-align: center;	
+	font-family:Comic Sans MS;
+}
+nav a{
+    background-color: coral;
+}
+nav ul {
+    padding: 0px 10px;
+    list-style-type: none;
+    position: relative;
+    display: inline-table;
+}
+nav ul li {
+/*    background-color: coral;
+    text-align: left;*/
+    float: left;
+    border-top: 2px solid white;
+}
+nav ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+nav ul li:hover a{
+    background-color: white;
+    color: coral;
+}
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+nav ul ul li:hover a{
+    background-color: coral;
+    color:white;
+}
+nav ul ul li {
+    width: 72%;
+    float:none;
+    border-top: 3px solid coral;
+    position: relative;
+}
+nav ul li:hover a{
+    background-color: white;
+    color:coral;
+}
+nav ul li:hover > ul {
+    display: block;
+}
+#wrapper {
+	width:80%;
+	margin: 0 auto;
+	padding: 0px;
+    border: 4px solid coral;
+}
+.fixarticle {
+	font-family: courier new;
+	background-color: white;
+	color: coral;
+	 padding:2%;
+	font-size: 160%;
+}
+/*
+section {
+    border: 7px dashed coral;
+    width: 100%;
+    background-color: white;
+    margin-bottom: 3%;
+}
+*/
+h1 { 
+	color: coral;
+	font-weight: bold;
+	font-style: italic;
+	font-family:Comic Sans MS;
+}
+h2 {
+	font-family:Comic Sans MS;
+	background-color: coral;
+	color: white;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 170%;
+}
+footer {
+	background-color: coral;
+	color: white;
+	text-align: center;
+ clear:both;
+}
+ul {
+	padding-left: 30px;     
+}
+section {
+ clear: both;
+}
+/*
+section li {
+	width: 70%;
+	line-height: 2em;
+}/*
+img {
+width: auto;
+}*/
+
+table {
+width: 100%;
+text-align: center;
+border: 1px solid coral;    
+border-collapse: collapse;
+}
+caption {
+font-size: 2em;
+font-family: bold;
+}
+tr:nth-child(even) {
+background-color: coral;
+color: white;   
+}
+th {
+padding: 7px;
+font-style: italic;    
+background-color: coral;
+color: white;
+border-bottom: 2px solid white;
+}
+.whitefix {
+border-right: 2px solid white;    
+}
+.coralfix{
+border-right: 2px solid coral;    
+}
+td:hover {
+background-color: lightblue;
+color: white;
+}
+td {
+height: 10%;    
+padding: .3%;
+}
+.othercake {
+    float: right;
+    width: 20%;
+    padding: 0% 1% 0%;
+}
+.babyshower {
+    float: left;
+    width: 17%;
+    padding: 0% 1% 0%;
+}
+.birthday {
+    float: right;
+    width: 30%;
+    padding: 0% 1% 0%;
+}
+/*.portfix {
+ padding-bottom: 4em;
+}*/
+.flavors {
+float: right;
+width: 38%;
+padding: 0% 1% 0%;
+}
+.phoneimg {
+float:left;
+width:25%;
+padding: 0% 1% 0%;
+}
+.mappicture {
+width: 85%;
+margin: 1.5% 7% 0%;
+}
+.profile {
+float:right;    
+padding: 0% 1% 0%;
+}
+#mainform  p{
+ width:64%;
+ padding-bottom:1%;
+}
+#Round,#labelS,#labelR, #Square {
+ display: none;
+}
+/*my form floats to the left, has a regulated width, and the background color is coral with white text*/
+/*
+#formenting {
+  padding:2%;
+    width: 60%;
+    background-color: coral;
+    color: white;
+}
+#formenting label {
+font-size: 90%;
+padding: 1.1%;
+}
+#formenting input{
+ width:20%;
+#formenting textarea {
+ width: 100%;
+}
+}*/
+.emilee {
+padding: 0px;
+ border: none;
+ margin: 0px;
+ width: 30%;
+height:338px;
+float:right;
+}
+.cakechart {
+float: left;
+}
+.topsection {
+  padding-bottom: 15%;
+}
+.middlesection {
+ padding-bottom: 2%;
+}
+.bottomsection {
+    padding: 1%;
+    padding: 1%;
+}
+#cakeform {
+    border: 1px solid coral; 
+    padding:1%;
+    float:left;
+    width: 50%;
+}
+#cakeform h2 {
+ text-align: center;
+}
+#cakeform legend{
+    text-align: center;
+}
+#cakeform fieldset {
+    padding: 2%;
+    text-align: center;
+    border-top:solid coral;
+    text-align: center;
+    border-bottom:0px;
+    border-left:0px;
+    border-right:0px;
+}
+#selectSquare, #selectRound {
+    visibility:hidden;
+}
+#btntotal{
+  float:left;
+  background-color: coral;
+  border:0px;
+  color: white;
+  font-size: 90%;
+  width: 25%;
+  padding:1%; 
+}
+#thetotal{
+ text-align: center;
+ font-size: 70%;
+}
+#btnreset{
+  float:right;
+  background-color: coral;
+  border:0px;
+  color: white;
+  font-size: 90%;
+  width: 25%;
+  padding:1%; 
+}
+/*|||||||||||||*/
+/*GALLERY FIXES*/
+#gallery {
+ text-align: center;
+}
+#gallery figure {
+ margin: 0px;
+}
+/*GALLERY FIXES*/
+/*|||||||||||||*/
+/*|||||||||||||||*/
+/*FLAVOR PAGE FIX*/
+#flavorpage td:hover {
+background-color: lightblue;
+color: white;
+}
+#flavorpage td {
+height: 10%;    
+padding: .3%;
+}
+#flavorpage th {
+padding: 7px;
+font-style: italic;    
+background-color: coral;
+color: white;
+border-bottom: 2px solid white;
+}
+#flavorpage tr:nth-child(even) {
+background-color: coral;
+color: white;   
+}
+#flavorpage caption {
+font-size: 2em;
+font-family: bold;
+}
+#flavorpage table {
+ width: 100%;
+text-align: center;
+border: 1px solid coral;    
+border-collapse: collapse;
+}
+/*FLAVOR PAGE FIX*/
+/*|||||||||||||||*/
+/*||||||||||||||||*/
+/*GALLERY PAGE FIX*/
+#gallerypage {
+}
+#gallerypage section {
+ clear: both;
+ border:2% solid black;
+}
+#gallerypage h1 {
+ font-size: 160%;
+ text-align: center;
+ padding: 1%;
+}
+#gallerypage p {
+ width:68%;
+ padding:1%;
+}
+#gallerypage img {
+ width:30%; 
+}
+#gallerypage img:nth-child(odd) {
+ float:right;
+}
+/*GALLERY PAGE FIX*/
+/*||||||||||||||||*/
+/*||||||||||||||||*/
+/*REQUEST FORM FIX*/
+#formenting {
+ background-color: white;
+ float:left;
+ width: 70%;
+}
+.fixInput {
+ width:23%;
+}
+#formsleft {
+ width:64.1%;
+ height:320px;
+ float:left;
+ padding:1%;
+ margin:0px;
+ border: none;
+ line-height: 1.7em;
+ font-size: 120%;
+}
+#formsleft label {
+ font-size: 110%;
+}
+#formsleft textarea {
+ width: 100%;
+ height: 100px;
+}
+#formsleft fieldset{
+ padding: 1%;
+ border: none;
+ width:94.6%;
+}
+#formsleft legend{
+text-align: center;
+ width: 100%;
+ color:red;
+}
+#formsright {
+ float:right;
+ border-left: solid coral;
+ border-right: solid coral;
+ border-top: none;
+ border-bottom: none;
+ width:33.1%;
+ height:338px;
+}
+#formsright h3 {
+ font-size: 220%;
+ text-align: center;
+ border:none;
+ background-color: white;
+ padding: 3%;
+ color:coral;
+}
+#formsright fieldset {
+ padding: 6%;
+ height:189px;
+ font-size: 130%;
+ line-height: 2em;
+ border-top:solid coral;
+ border-bottom:solid coral;
+ border-left: none; 
+ border-right: none; 
+}
+#formsright input:last-child {
+ width: 100%;
+ font-size: 130%;
+ border:none;
+ font-weight: bold;
+ padding: 6%;
+ background-color:peachpuff;
+ color:red;
+}
+#requestarticle {
+background-color: white;
+}
+
+#requestarticle h2 {
+ border:none;
+ margin: 0px;
+ padding: 0px;
+ text-align: center;
+ font-size: 200%;
+ color:coral;
+}
+/*END OF REQUEST FORM FIX*/
+/*|||||||||||||||||||||||*/
+/**/

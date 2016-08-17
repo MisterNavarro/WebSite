@@ -1,0 +1,117 @@
+* {
+ display:block;
+}
+html, body{
+ height:100%;
+}
+body {
+ margin:0%;
+ width: 100%;
+ background-image: url(../WebSecurity/mabackground.jpg);
+ background-repeat: no-repeat;
+ background-size: cover; 
+}
+title {
+ display: none;
+}
+header {
+ text-align: center;
+ width:100%;
+ color:white;
+}
+article {
+ font-family: 'Rakkas', cursive;
+ height:85%;
+ width: 80%;
+ margin: 0 auto;
+ }
+header {
+font-family: 'Creepster', cursive;
+font-size: 270%;
+line-height: 150%;
+}
+#leftside{
+ float:left;
+ width: 58%;
+ font-size: 120%;
+ height:80%;
+ margin:0%;
+}
+#theheading {
+ background-color: orange;
+ opacity: .7;
+}
+#rightside {
+ float:right;
+ width:40%;
+ margin:0px;
+ padding:0px;
+}
+section {
+ margin: 0 auto;
+ background-color:black;
+ border: 2% solid white;
+ color: orange;
+}
+/*MY BUTTONS ARE CONFIGURED SO THEY LOOK AS IF YOU WERE PRESSING A REAL BUTTON*/
+#backButton, #nextButton, #resetButton {
+ background-color: black;
+ color:orange;
+ font-size: 1em;
+ padding:1.7% 12.34%;
+ float:left;
+ /*visibility: hidden;*/
+  cursor: pointer;
+  text-align: center;
+  color: white;
+  background-color:darkorange;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 7px gray;
+}
+#resetButton:hover {background-color: orange}
+#backButton:hover {background-color: orange}
+#nextButton:hover {background-color: orange}
+#nextButton:active {
+  background-color: darkgoldenrod;
+  box-shadow: 0 2px darkgray;
+  transform: translateY(5px);
+}
+
+#resetButton:active {
+  background-color: darkgoldenrod;
+  box-shadow: 0 2px darkgray;
+  transform: translateY(5px);
+}
+#backButton:active {
+  background-color: darkgoldenrod;
+  box-shadow: 0 2px darkgray;
+  transform: translateY(5px);
+}
+ .storyboard {
+ padding: 2%;
+ margin: 0% auto;
+ width:80%;
+ background-size: cover;
+ /*display: none;*/
+}
+.topsection {
+ font-size: 130%;
+ line-height: 1.5em;
+}
+figure {
+ padding:0%;
+ margin: 0%;
+ border: solid darkorange;
+ width: 425px;
+ height:350px;
+ background-color: white;
+ float: right;
+}
+.middlesection {
+ width: 100%;
+ padding: 0% 2% 0% 0%;
+}
+.bottomsection {
+ width: 100%;
+}
